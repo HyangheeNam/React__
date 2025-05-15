@@ -1,0 +1,190 @@
+html, body {
+  height: 100%;
+  margin: 0; /* 기본 마진 제거 */
+}
+
+.background-form {
+  
+    height: 100vh; /* 전체 높이 */
+    display: flex; /* Flexbox 사용 */
+    align-items: flex-start; /* 상단 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    overflow: auto;
+}
+
+.instagram-form {
+  width: 600px; /* 고정 너비 */
+  height: 1000px; /* 고정 높이 */
+  margin-top: 70px; /* 상단에서 20px 아래 위치 */
+  margin-bottom: 70px;
+  background-color: white; /* 배경색 추가 (선택사항) */
+  border-radius: 8px; /* 모서리 둥글게 (선택사항) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex; /* Flexbox 사용 */
+  flex-direction: column; /* 자식 요소를 세로로 정렬 */
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.main-font {
+  margin-top: 35px;
+  /* margin-bottom: 20px; */
+}
+
+.allura-regular {
+  font-family: "Allura", cursive;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: -webkit-xxx-large;
+}
+
+.main-container {
+  border-block: 1px solid #ccc;
+  margin-top: 35px;
+}
+
+.vlog {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  position: relative; /* 자식 요소의 위치 기준 */
+    width: 475px; /* 원하는 너비 */
+    height: 360px; /* 원하는 높이 */
+    overflow: hidden; /* 컨테이너를 넘는 부분은 숨김 */
+    margin-top: 35px;
+}
+
+.image-show {
+  display: flex; /* 이미지를 가로로 나열 */
+    transition: transform 0.5s ease;
+}
+
+.image-show img {
+  width: 475px; /* 컨테이너 너비와 동일하게 설정 */
+    height: 360px; /* 고정 높이 */
+    flex-shrink: 0; /* 이미지가 축소되지 않도록 설정 */
+}
+
+.image-navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -186px;
+  /* margin-top: -40px; 버튼이 이미지 위에 위치하도록 조정 */
+}
+
+.like-icon {
+  width: 50px;
+  height: 30px;
+  display: flex; /* Flexbox 사용 */
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: center; 
+  /* margin-left: 62px; */
+}
+
+.like-icon img {
+  width: 21px;
+  height: 23px;
+  margin-right: 1px;
+  margin-top: -11px;
+  display: flex; /* Flexbox 사용 */
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: center; 
+  
+}
+
+.heart-img {
+  width: 21px;
+  height: 23px;
+  margin-right: 5px;
+  margin-top: -5px;
+  display: flex; /* Flexbox 사용 */
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: center; 
+}
+
+.like-count span {
+  font-size: 10px;
+}
+
+.comments-icon {
+  width: 50px;
+  height: 30px;
+}
+
+.comment-img {
+  width: 30px;
+  margin-top: -5px;
+  height: 29px;
+}
+
+.show-comment-window {
+  margin-top: 17px;
+  width: 486px;
+  margin-top: 23px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.bubble {
+  position: relative; /* 말풍선 위치를 설정 */
+  background-color: #ffffff; /* 배경색 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  padding: 15px; /* 여백 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.344); /* 그림자 효과 */
+  margin-top: 3px; /* 상단 여백 */
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 10px;
+  margin-left: 51px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent transparent #f9f9f9 transparent;
+}
+
+h3 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 18px;
+  padding-bottom: 17px;
+}
+
+.comment-input {
+  width: 400px;
+  height: 30px;
+  margin-right: 7px;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+}
+
+.comment-list {
+  list-style-type: none;
+  border-top: 1px solid #ccc;
+}
+
+.comment-save {
+  margin-left: -40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.comment-save:last-child {
+  /* border-bottom: none; 마지막 댓글에는 실선 제거 */
+  padding-bottom: 10px;
+}

@@ -1,0 +1,129 @@
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
+
+.calc{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px; 
+    background-color: #f0f0f0; 
+
+}
+
+.calculator {
+    width: 320px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.display {
+    width: 100%;
+    height: 80px;
+    background-color: #222;
+    color: #fff;
+    font-size: 32px;
+    text-align: right;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button.colored-btn {
+    background-color: #3498db;
+    /* background-color: #f0a500; */
+    font-weight: bold;
+}
+
+button.colored-btn:hover {
+    /* background-color: #e78e00; */
+    background-color: #2980b9;
+}
+
+button.span-two {
+  width: calc(70px * 2 + 10px); 
+}
+
+button.clear-btn {
+    background-color: #e74c3c;
+    font-weight: bold;
+}
+
+button.clear-btn:hover {
+    background-color: #c0392b;
+}
+
+button.backspace-btn {
+    background-color: #3498db;
+}
+
+button.backspace-btn:hover {
+    background-color: #2980b9;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+    width: 100%;
+    padding: 15px;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .btn-container {
+        margin-bottom: 8px;
+    }
+
+    .display {
+        font-size: 28px;
+        height: 70px;
+    }
+}

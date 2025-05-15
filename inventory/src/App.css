@@ -1,0 +1,172 @@
+html, body {
+  height: 100%;
+  margin: 0; /* 기본 마진 제거 */
+}
+
+.form-container{
+  height: 1000px;
+}
+
+.top-container {
+  display: flex;
+  align-items: flex-start; /* 상단 정렬 */
+  background-color: aliceblue;
+  justify-content: space-between;
+}
+
+img {
+  filter: grayscale(100%); /* 흑백 */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+  padding: 30px;
+  background-color: antiquewhite;
+  font-weight: 650;
+  font-size: larger;
+}
+
+.logo-img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.register-container {
+  display: flex;
+  justify-content: flex-start; /* 위쪽 정렬 */
+  align-items: center; /* 왼쪽 정렬 */
+  padding: 20px; /* 패딩 추가 */
+  font-weight: 700;
+  flex-grow: 1; /* 남은 공간을 차지하도록 설정 */
+  margin-top: 16px;
+  margin-left: 177px;
+
+}
+
+.add-input{
+  width: 350px;
+}
+
+.register-container > span, .register-container > input, .register-container > button {
+  margin: 0 10px; /* 요소 간 간격 추가 */
+}
+
+.registerBtn{
+  padding: 5px 10px; /* 버튼 패딩 추가 */
+  border: none;
+  background-color: #007bff; /* 버튼 배경색 */
+  color: white; /* 버튼 텍스트 색 */
+  border-radius: 4px; /* 둥근 모서리 */
+  cursor: pointer; /* 포인터 커서 */
+  transition: background-color 0.3s; /* 배경색 전환 효과 */
+}
+
+.register-container button:hover {
+  background-color: #0056b3; /* 호버 시 색상 변경 */
+}
+
+.middle-container{
+  display: flex; /* Flexbox 사용 */
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: center; 
+  padding: 20px;
+  background-color: #ffffff; /* 배경색 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.084); 
+  margin-left: 174px;
+  margin-top: 30px;
+  width: 800px;
+}
+
+.search-title{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.bottom-container{
+  margin-left: 178px;
+  padding: 10px;
+  margin-top: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.084); 
+  background-color: #ffffff; /* 배경색 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  width: 817px;
+}
+
+.list-container {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* .list-title { */
+  /* display: table-row; */
+  /* font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+} */
+
+.list-title {
+  display: table-row; /* 표의 행으로 설정 */
+  font-weight: bold; /* 글자 두껍게 */
+  background-color: #f8f8f8; /* 배경색 추가 */
+  width: 100%;
+}
+
+.list-title span {
+  display: table-cell; /* 셀처럼 표시 */
+  padding: 10px; /* 패딩 추가 */
+  border-bottom: 1px solid #ccc; /* 구분선 추가 */
+}
+
+.show-list {
+  display: table-row-group;
+}
+
+.list-item {
+  display: table-row; /* 각 항목을 행으로 설정 */
+  border-bottom: 1px solid #000; /* 바닥선 추가 */
+}
+
+.list-item span {
+  display: table-cell; /* 셀처럼 표시 */
+  padding: 10px; /* 패딩 추가 */
+}
+
+/* 마지막 요소에서 실선 제거 */
+.list-item span:last-child {
+  border: none; /* 실선 제거 */
+}
+
+/* 전체 리스트 항목에 바닥선 추가 (선택 사항) */
+.list-item:last-child {
+  border-bottom: none; /* 마지막 항목의 바닥선 제거 */
+}
+
+.list-item div {
+  display: table-cell;
+}
+
+.updateBtn{
+  margin-left: 3px;
+  margin-right: 8px;
+}
+
+/* 버튼 스타일링 */
+.list-item span button {
+  padding: 5px 10px; /* 버튼 패딩 추가 */
+  border: none;
+  background-color: #007bff; /* 버튼 배경색 */
+  color: white; /* 버튼 텍스트 색 */
+  border-radius: 4px; /* 둥근 모서리 */
+  cursor: pointer; /* 포인터 커서 */
+  transition: background-color 0.3s; /* 배경색 전환 효과 */
+}
+
+.list-item span button:hover {
+  background-color: #0056b3; /* 호버 시 색상 변경 */
+}
